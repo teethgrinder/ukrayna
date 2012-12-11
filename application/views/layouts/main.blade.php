@@ -25,6 +25,7 @@
         {{ HTML::style('js/css/redactor.css') }}
         
         {{ HTML::script('js/redactor/redactor.js') }}
+        {{ HTML::style('css/custom.css') }}
     </head>
     <body>
         <!--[if lt IE 7]>

@@ -19,9 +19,9 @@ class Home_Users_Controller extends Base_Controller {
 			'password' => Input::get('password')
 			);
  
-		 if (Auth::attempt($userdata)
+		 if (Auth::attempt($userdata))
         {
-            if(Auth::user()->superadmin == '1')
+            if(Auth::user()->superadmin == '0')
             {
                 return Redirect::to('admin'); 
             }

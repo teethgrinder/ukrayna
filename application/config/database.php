@@ -80,9 +80,9 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
+			'database' => 'abctasar_ukrayna',
+			'username' => 'abctasar_ukr',
+			'password' => 'Ne12veryt',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',

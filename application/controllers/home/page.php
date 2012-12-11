@@ -7,7 +7,7 @@ class Home_Page_Controller extends Base_Controller {
 		$this->filter('before', 'csrf')->on('post');
 	}
 	public function get_homepage()
-	{
+	{	$posts = DB::table('posts')->get();
 		$page = DB::table('pages')->where('template', '=', 'homepage')->first();
 		//$types = Type::lists('title', 'id');
 		Section::inject('title', $page->meta_title);

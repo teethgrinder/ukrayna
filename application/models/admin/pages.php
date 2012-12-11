@@ -17,14 +17,8 @@ public $columns = array(
 		),
 		'meta_title' 	=> array(
 			'title' => 'meta_title',
-		),
-			
-			'created_at' => array(
-			'title' => 'Created', //the header title of the column
-    ),
-			'updated_at' => array(
-       'title' => 'Updated',
-    ));
+		)
+    );
  
 public $filters = array
 	(
@@ -45,14 +39,7 @@ public $filters = array
 		),
 		'meta_title' 	=> array(
 			'title' => 'meta_title',
-		),
-			
-			'created_at' => array(
-			'title' => 'Created', //the header title of the column
-    ),
-			'updated_at' => array(
-       'title' => 'Updated',
-    ));
+		) );
  
 
 	public function on_delete()
