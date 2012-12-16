@@ -1,17 +1,18 @@
 @layout('layouts.main')
 @section('content')
- <div class="row">
- 
- <div class="nine columns" role="content">
+  <div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="nine columns" role="content">
 
       <article>
 				<div class="row">   
           <div class="six columns offset-by-one">
-					
 
-          <h3>Login</h3>
-  
- 
+          <h3>Login  </h3>
+         </div>
+			<div class="row"> 
+			<div class="six columns offset-by-two">
          {{ Form::open(action('home.users@login'),'POST') }}
         <!-- check for login errors flash var -->
         {{Form::token()}}
@@ -27,10 +28,9 @@
         <!-- submit button -->
         <p>{{ Form::submit('Login', array('class' => 'btn-large')) }}</p>
     {{ Form::close() }}
- 
+      
+    </article>
+    </div> <!-- /container -->
+     
   
-		 </article>
- 
-  <!-- /container -->
- 
 @endsection

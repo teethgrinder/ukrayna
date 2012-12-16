@@ -9,7 +9,9 @@ class Home_Users_Controller extends Base_Controller {
 	}
 	public function get_login()
 	{  // $password = "whatever"; $hashed_password = Hash::make($password); dd(Hash::check($password, $hashed_password));
-		return View::make('home.page.login');	
+		$links = DB::table('links')->where('type', '=', '1')->get();
+		$page = DB::table('pages')->where('id', '=', '1')->first();
+		return View::make('home.login')->with('page',$page)->with('links', $links);	
 	}
 	
 	public function post_login() 
@@ -25,7 +27,7 @@ class Home_Users_Controller extends Base_Controller {
             {
                 return Redirect::to('admin'); 
             }
-            return Redirect::to('edit');
+            return Redirect::to('edit/vize');
         }
 	    return Redirect::to('user/login');
     }

@@ -17,15 +17,14 @@
         
         <!-- if you need normalize.css -->
         {{-- HTML::style('css/normalize.min.css') }}
-        
-        {{ HTML::style('css/app.css') }}
-        
-        {{ HTML::script('js/foundation/modernizr.foundation.js') }}
-          
-        {{ HTML::style('js/css/redactor.css') }}
-        
-        {{ HTML::script('js/redactor/redactor.js') }}
+        {{ HTML::style('css/app.css') }}  
+        {{ HTML::style('js/redactor/redactor.css') }}
         {{ HTML::style('css/custom.css') }}
+       
+        
+        <!-- begin javascript -->
+        {{ HTML::script('js/foundation/modernizr.foundation.js') }}
+      
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -41,13 +40,10 @@
             @include('partials.footer')
         </div>
         <!-- end content -->
-        
-        <!-- begin javascript -->
-        
-        <!-- Use Googles online jQuery lib -->
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
+         <!-- Use Googles online jQuery lib -->
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>  
         <!-- Use local jQuery lib -->
-        {{ HTML::script('js/foundation/jquery.js') }}
+      <!--  {{ HTML::script('js/foundation/jquery.js') }}-->
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
         
         {{ HTML::script('js/foundation/jquery.foundation.tabs.js') }}
@@ -72,7 +68,8 @@
         
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
-
+        
+        {{ HTML::script('js/redactor/redactor.js') }}
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -80,10 +77,10 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
         <!-- Put this above your </body> tag -->
-				<script type="text/javascript">
-						$(window).load(function() {
-							$('#slider').orbit();
-						});
+		 
+			 <script type="text/javascript">
+				$(document).ready(function()
+				{$('#editfield').redactor({ imageUpload: '/home/page/photo_upload/{{$page->id}}', lang: 'tr' });});
 			</script>
         <!-- end javascript -->
     </body>

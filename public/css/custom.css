@@ -1,3 +1,59 @@
+body{
+	color:#0031AF;
+}
 h3,h5 {
     color: rgb(43, 166, 203);
+}
+
+h5{
+font-size: 1.5em;
+margin: 0px 0 5px;
+padding-bottom: 8px;
+background: url(../laravel/img/col_h2.gif) 0 100% no-repeat;
+}
+
+.contain-to-grid, .top-bar{
+ background:#0031AF;
+}
+.logoukraine{
+margin: 0px -20px -20px -16px;
+font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+font-size: 17px !important;
+font-weight: bold;
+height: 45px;
+line-height: 45px;
+padding: 0 15px;
+color: white;
+display: block;
+background: #0031AF;
+}
+
+.top-bar ul > li.name {
+    background: #0031AF;
+    height: 60px;
+    margin-top:-0px;
+  }
+   .top-bar ul > li.active, .top-bar ul > li:hover {
+ 
+	background:none;
+  }
+ 
+ 
+ul.button-group li {
+padding: 0;
+margin: 5px 0 0 -5px;
+
+}
+
+.logoukraine:hover{
+margin: 0px -20px -20px -16px;
+font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+font-size: 17px !important;
+font-weight: bold;
+height: 45px;
+line-height: 45px;
+padding: 0 15px;
+color: white;
+display: block;
+background: #0031AF;
 }

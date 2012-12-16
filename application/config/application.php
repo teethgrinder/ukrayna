@@ -67,8 +67,8 @@ return array(
 	|
 	*/
 
-	'profiler' => false,
-
+	'profiler' => true,
+ 
 	/*
 	|--------------------------------------------------------------------------
 	| Application Character Encoding

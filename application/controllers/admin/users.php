@@ -4,12 +4,14 @@ class Home_User_Controller extends Base_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->filter('before', 'is_admin')->on('dashboard');
+		$this->filter('before', 'is_admin')->on('post');
 		//$this->filter('before', 'csrf')->on('post');
 	}
 	public function get_login()
 	{  // $password = "whatever"; $hashed_password = Hash::make($password); dd(Hash::check($password, $hashed_password));
-		return View::make('home.login');	
+	
+		$links = DB::table('links')->where('type', '=', '1')->get();
+		return View::make('home.login')->with('links', $links);	
 	}
 	
 	public function post_login() 

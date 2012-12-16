@@ -1,11 +1,12 @@
     <!-- Sidebar -->
 
     <aside class="three columns">
-
+			<br /><br />
+			 <a href="http://www.findlocalweather.com/forecast.php?config=&forecast=zandh&pands=UKKK" target="_blank"><img src="http://www.findlocalweather.net/forecast.php?forecast=hourly&pands=UKKK&place=Kyiv&state=Ua&config=png&alt=hwiccmet" border="0" alt="Click for the latest Kyiv weather forecast."width="180" height="72"></a> 
+			<br /><br />
       <h5>Linkler</h5>
       <ul class="side-nav">
-				<li><a href="http://www.findlocalweather.com/forecast.php?config=&forecast=zandh&pands=UKKK" target="_blank"><img src="http://www.findlocalweather.net/forecast.php?forecast=hourly&pands=UKKK&place=Kyiv&state=Ua&config=png&alt=hwiccmet" border="0" alt="Click for the latest Kyiv weather forecast."width="152" height="72"></a> 
-</li>
+	
         <li><a href="#">{{ HTML::image('laravel/img/president_tr.jpg') }}</a></li>
         <li><a href="#">{{ HTML::image('laravel/img/parliament_tr.jpg') }}</a></li>
         <li><a href="#">{{ HTML::image('laravel/img/government_tr.jpg') }}</a></li>

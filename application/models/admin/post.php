@@ -2,18 +2,13 @@
 
 namespace AdminModels;
 
-class Subject extends \Subject {
+class Post extends \Post {
 public $expand = 600;
 public $columns = array(
 			'id',
 			'title' 	=> array(
 			'title' => 'title',
 		),
-			'slug' 	=> array(
-			'title' => 'slug',
-		),
-	 
-		
 			'created_at' => array(
 			'title' => 'Created', //the header title of the column
     ),
@@ -30,9 +25,7 @@ public $filters = array
 			'title' 	=> array(
 			'title' => 'title',
 		),
-			'slug' 	=> array(
-			'title' => 'slug',
-		),
+ 
 		'content' 	=> array(
 			'title' => 'template',
 			'type'=>'wysiwyg'

@@ -2294,7 +2294,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 /* line 19, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.0/scss/foundation/components/modules/_topbar.scss */
 .contain-to-grid {
   width: 100%;
-  background: #2ba6cb;
+  background: #222222;
 }
 
 /* Wrapped around .top-bar to make it fixed at the top */
@@ -2310,7 +2310,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 /* <nav> */
 /* line 25, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.0/scss/foundation/components/modules/_topbar.scss */
 .top-bar {
-  background: #2ba6cb;
+  background: #222222;
   height: 45px;
   line-height: 45px;
   margin: 0 0 30px;
@@ -2377,12 +2377,11 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 }
 /* line 47, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.0/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li:hover, .top-bar ul > li.active {
-  /*ackground: black;*/
+  background: black;
 }
 /* line 48, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.0/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li:hover a, .top-bar ul > li.active a {
-  /*color: #d9d9d9;*/
-  color: #F8ED13;
+  color: #d9d9d9;
 }
 /* line 52, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/zurb-foundation-3.2.0/scss/foundation/components/modules/_topbar.scss */
 .top-bar ul > li.divider {

@@ -26,6 +26,11 @@ return array(
 	 * )
 	 */
 	'models' => array(
+	'posts' => array(
+        'title' => 'Posts',
+        'single' => 'post',
+        'model' => 'AdminModels\\Post', //In this case I'm just using the un-namespaced "Hat" class/model.
+    ),
 	'subjects' => array(
         'title' => 'Subjects',
         'single' => 'subject',
