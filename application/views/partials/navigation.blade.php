@@ -10,7 +10,7 @@
 				<li><a href="<?php echo URL::to($link->title); ?>" class="button radius">{{$link->slug}}</a></li>
 				@endforeach
 			</ul>
-			<li class="toggle-topbar>"> </li>
+		 
 		</ul>
 		
 			<!--<ul class="right button-group radius">
